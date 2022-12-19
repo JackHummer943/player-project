@@ -1,25 +1,26 @@
-function BlockForm() {
+function BlockForm(title, age) {
+  console.log();
   return(
-  <div class="pizza-block">
+  <div class="block-form">
   <img
-    class="pizza-block__image"
-    src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg"
-    alt="Pizza"
+    class="block-form__image"
+    src="https://upload.wikimedia.org/wikipedia/ru/3/32/Freakazoid.jpg"
+    alt="Project"
   />
-  <h4 class="pizza-block__title">Чизбургер-пицца</h4>
-  <div class="pizza-block__selector">
+  <h4 class="block-form__title">Название проекта</h4>
+  <div class="block-form__selector">
     <ul>
-      <li class="active">тонкое</li>
-      <li>традиционное</li>
+      <li class="active">Классическая озвучка</li>
+      <li>Выберите язык</li>
     </ul>
     <ul>
-      <li class="active">26 см.</li>
-      <li>30 см.</li>
-      <li>40 см.</li>
+      <li class="active">Обычный просмотр</li>
+      <li>Дополнительный контент</li>
+      <li>В рамках телепрограммы</li>
     </ul>
   </div>
-  <div class="pizza-block__bottom">
-    <div class="pizza-block__price">от 395 ₽</div>
+  <div class="block-form__bottom">
+    <div class="block-form__price">от 395</div>
     <div class="button button--outline button--add">
       <svg
         width="12"
@@ -34,7 +35,11 @@ function BlockForm() {
         />
       </svg>
       <span>Добавить</span>
-      <i>2</i>
+      <i>{/* Здесь возможно будет место в очереди
+       на просмотр, учитывается количество 
+       проектов которые уже добавлены и при новом
+        добавлении проекта, проект встает 
+        в очередь*/}</i>
     </div>
   </div>
   </div> 

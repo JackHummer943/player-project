@@ -18,6 +18,8 @@ function App() {
         </div>
         <h2 class="content__title">Все</h2>
         <div class="content__items">
+<BlockForm title="" age=""/>
+<BlockForm/>
 <BlockForm/>
         </div>
       </div>
