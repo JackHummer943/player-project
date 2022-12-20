@@ -1,27 +1,36 @@
-function BlockForm(title, age) {
-  console.log();
-  return(
-  <div class="block-form">
+import React from 'react';
+
+
+
+function BlockForm({title, age, imageUrl, param, type}) {
+  const [FormCount, setFormCount] = React.useState(0);
+  const typeNames = ['Классическая озвучка',',Выберите язык'];
+  const onClickAddButton = () => {
+    setFormCount(FormCount+1);
+  };
+
+  return (
+  <div className="block-form">
   <img
-    class="block-form__image"
-    src="https://upload.wikimedia.org/wikipedia/ru/3/32/Freakazoid.jpg"
+    className="block-form__image"
+    src={imageUrl}
     alt="Project"
   />
-  <h4 class="block-form__title">Название проекта</h4>
-  <div class="block-form__selector">
+  <h4 className="block-form__title">{title}</h4>
+  <div className="block-form__selector">
     <ul>
-      <li class="active">Классическая озвучка</li>
+      <li className="active">Классическая озвучка</li>
       <li>Выберите язык</li>
     </ul>
     <ul>
-      <li class="active">Обычный просмотр</li>
-      <li>Дополнительный контент</li>
-      <li>В рамках телепрограммы</li>
+    {
+      param.map(param => <li> {param}</li>)
+    }
     </ul>
   </div>
-  <div class="block-form__bottom">
-    <div class="block-form__price">от 395</div>
-    <div class="button button--outline button--add">
+  <div className="block-form__bottom">
+    <div className="block-form__price">от {age}</div>
+    <button onClick={onClickAddButton} className="button button--outline button--add">
       <svg
         width="12"
         height="12"
@@ -39,8 +48,10 @@ function BlockForm(title, age) {
        на просмотр, учитывается количество 
        проектов которые уже добавлены и при новом
         добавлении проекта, проект встает 
-        в очередь*/}</i>
-    </div>
+        в очередь*/}
+        {FormCount}
+        </i>
+    </button>
   </div>
   </div> 
   );
