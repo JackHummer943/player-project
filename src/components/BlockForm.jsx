@@ -3,8 +3,10 @@ import React from 'react';
 
 
 function BlockForm({title, age, imageUrl, param, type}) {
+  const [activeType, setActiveType] = React.useState(0);
+  const [activeParam, setActiveParam] = React.useState(0);
   const [FormCount, setFormCount] = React.useState(0);
-  const typeNames = ['Классическая озвучка',',Выберите язык'];
+  const typeNames = ["ничего", "По умолчанию" , "Выберете язык"];
   const onClickAddButton = () => {
     setFormCount(FormCount+1);
   };
@@ -19,13 +21,26 @@ function BlockForm({title, age, imageUrl, param, type}) {
   <h4 className="block-form__title">{title}</h4>
   <div className="block-form__selector">
     <ul>
-      <li className="active">Классическая озвучка</li>
-      <li>Выберите язык</li>
+      {type.map((typeId) =>(
+        <li 
+        key = {typeId}
+        onClick={() => setActiveType(typeId)} 
+        className={activeType === typeId ? 'active' : ''}> 
+        {typeNames[typeId]}
+        </li>
+      ))}
     </ul>
     <ul>
-    {
-      param.map(param => <li> {param}</li>)
-    }
+    {/* {
+      param.map((param, i) => (
+        <li
+        key = {param}
+
+        onClick={() => setActiveParam(i)} 
+        className={activeParam === i ? 'active' : i}
+        > 
+        {typeNames}</li>
+        ))} */}
     </ul>
   </div>
   <div className="block-form__bottom">

@@ -1,4 +1,8 @@
+import React from 'react';
+
 function Sort () {
+  const [] = React.useState();
+
   return (          
   <div className="sort">
   <div className="sort__label">
@@ -20,7 +24,7 @@ function Sort () {
   <div className="sort__popup">
     <ul>
       <li className="active">популярности</li>
-      <li>рейтингу</li>
+      <li>возрасту</li>
       <li>алфавиту</li>
       <li>году выпуска</li>
     </ul>

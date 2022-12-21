@@ -3,48 +3,48 @@
   "id": 0, 
   "imageUrl": "https://upload.wikimedia.org/wikipedia/ru/3/32/Freakazoid.jpg",
   "title": "Freakazoid",
-  "type": ["Классическая озвучка","Выберите язык"], 
-  "param":["Обычный просмотр","Дополнительный контент","В рамках телепрограммы"],
-  "age": "не определено"
+  "type": [1,2], 
+  "param":[],
+  "age": ""
   },
   {
   "id": 1,
   "imageUrl": "https://upload.wikimedia.org/wikipedia/ru/f/f0/%D0%A2%D0%B8%D0%BA-%D0%B3%D0%B5%D1%80%D0%BE%D0%B9.JPG",
    "title": "Tick",
-   "type": ["Классическая озвучка","Выберите язык"],
-   "param":["Обычный просмотр","Дополнительный контент","В рамках телепрограммы"],
-      "age": "не определено"
+   "type": [1,2],
+   "param":[],
+      "age": ""
   },
   {
     "id": 2,
     "imageUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/f76c419e-322d-4971-b68a-810e7a1b88b7/300x450",
      "title": "Wild C.A.T.s: Covert Action Teams",
-     "type": ["Классическая озвучка","Выберите язык"],
+     "type": [1,2],
      "param":["Обычный просмотр","Дополнительный контент","В рамках телепрограммы"],
-        "age": "не определено"
+        "age": ""
   },
   {
     "id": 3,
     "imageUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/2095a3f0-c99c-41a1-9d4a-1962638f1b76/300x450",
      "title": "Phantom",
-     "type": ["Классическая озвучка","Выберите язык"],
+     "type": [1,2],
      "param":["Обычный просмотр","Дополнительный контент","В рамках телепрограммы"],
-        "age": "не определено"
+        "age": ""
   },
   {
     "id": 4,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/9/9c/TheSavageDragonMini1.jpg",
      "title": "Savage Dragon",
-     "type": ["Классическая озвучка","Выберите язык"],
+     "type": [1,2],
      "param":["Обычный просмотр","Дополнительный контент","В рамках телепрограммы"],
-        "age": "не определено"
+        "age": ""
   },
    {
     "id": 5,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/ru/f/f4/%D0%9B%D1%8E%D0%B4%D0%B8_%D0%98%D0%BA%D1%81_%28%D0%BC%D1%83%D0%BB%D1%8C%D1%82%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%29.jpeg",
-     "title": "x-men",
-     "type": ["Классическая озвучка","Выберите язык"],
+     "title": "X-MEN",
+     "type": [1,2],
      "param":["Обычный просмотр","Дополнительный контент","В рамках телепрограммы"],
-        "age": "не определено"
+        "age": ""
   }
  ]
