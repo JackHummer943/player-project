@@ -46,5 +46,13 @@
      "type": [1,2],
      "param":["Обычный просмотр","Дополнительный контент","В рамках телепрограммы"],
         "age": ""
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/d/d0/Spider-Man_%281994_TV_series%29_title_screen.png",
+    "title": "SPIDER-MEN",
+     "type": [1,2],
+     "param":["Обычный просмотр","Дополнительный контент","В рамках телепрограммы"],
+        "age": ""
   }
  ]
