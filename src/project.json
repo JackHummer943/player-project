@@ -81,10 +81,34 @@
   },
   {
     "id": 10,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/ru/3/31/Batman_Beyond.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/ru/2/29/Spider-Man_Unlimited.jpg",
     "title": "SPIDER-MEN Unlimited",
      "type": [1,2],
      "param":["Обычный просмотр","Дополнительный контент","В рамках телепрограммы"],
         "age": ""
+  },
+  {
+    "id": 11,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Todd_McFarlane%27s_Spawn_%281997-%2799_TV_series%29_logo.jpg",
+  "title": "Spawn",
+  "type": [1,2],
+  "param":["Обычный просмотр","Дополнительный контент","В рамках телепрограммы"],
+     "age": ""
+  },
+  {
+    "id": 12,
+  "imageUrl": "",
+  "title": "The Avengers: United They Stand",
+  "type": [1,2],
+  "param":["Обычный просмотр","Дополнительный контент","В рамках телепрограммы"],
+     "age": ""
+  },
+  {
+    "id": 13,
+  "imageUrl": "",
+  "title": "Дьяволик",
+  "type": [1,2],
+  "param":["Обычный просмотр","Дополнительный контент","В рамках телепрограммы"],
+     "age": ""
   }
- ]
+]
