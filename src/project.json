@@ -97,7 +97,7 @@
   },
   {
     "id": 12,
-  "imageUrl": "",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/eb/Avg_head_s01.jpg",
   "title": "The Avengers: United They Stand",
   "type": [1,2],
   "param":["Обычный просмотр","Дополнительный контент","В рамках телепрограммы"],
@@ -105,10 +105,27 @@
   },
   {
     "id": 13,
-  "imageUrl": "",
+  "imageUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/f58da13c-cae1-4ef2-968c-46e4dd9430ee/600x900",
   "title": "Дьяволик",
   "type": [1,2],
   "param":["Обычный просмотр","Дополнительный контент","В рамках телепрограммы"],
      "age": ""
+  },
+  {
+    "id": 14,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/en/d/d6/SwampThing1991Logo.jpg",
+  "title": "Swamp Thing",
+  "type": [1,2],
+  "param":["Обычный просмотр","Дополнительный контент","В рамках телепрограммы"],
+     "age": ""
+  },
+  {
+    "id": 15,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/ru/thumb/8/8d/Exosquad_logo.jpg/411px-Exosquad_logo.jpg",
+  "title": "Exosquad",
+  "type": [1,2],
+  "param":["Обычный просмотр","Дополнительный контент","В рамках телепрограммы"],
+     "age": ""
   }
+
 ]
