@@ -4,28 +4,25 @@ import Categories from './components/Categories';
 import Sort from './components/Sort';
 import BlockForm from './components/BlockForm';
 import project from '../src/project.json'
+import React from 'react';
+
+import {  Routes , Route} from 'react-router-dom';
+import Home from './components/Home';
 
 
+import Player from './components/Player';
 
 function App() {
   return (
     <div className="wrapper">
 <Header/>
     <div className="content">
-      <div className="container">
-        <div className="content__top">
-{/* <Categories/> */}
-<Sort/>
-        </div>
-        <h2 className="content__title">Все</h2>
-        <div className="content__items">
-        {project.map((obj) => ( 
-   <BlockForm 
-   key={obj.title} {...obj}
-  />
-        ))}
-        </div>
-      </div>
+    <Routes>
+           {/* по главному пути рендери элемент home  */}
+          <Route path="/player" element={<Player/>}/>
+          <Route path="/" element={<Home />}/>
+      </Routes>
+
     </div>
   </div>
   );
