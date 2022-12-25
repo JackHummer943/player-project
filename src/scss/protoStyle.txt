@@ -1,0 +1,471 @@
+/* Youtube player */
+
+position: relative;
+width: 1280px;
+height: 720px;
+
+
+
+/* image */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: url(Mask Group.png), #9EBFD0;
+
+
+/* shadows */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* bottom */
+
+position: absolute;
+height: 96px;
+left: 1280px;
+right: -1280px;
+bottom: 0px;
+
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+background-blend-mode: multiply;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* top */
+
+position: absolute;
+height: 96px;
+left: 1280px;
+right: -1280px;
+top: 96px;
+
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
+transform: rotate(-180deg);
+
+
+/* bottom controls */
+
+position: absolute;
+left: 0.94%;
+right: 0.94%;
+top: 94.58%;
+bottom: 1.25%;
+
+
+
+/* ico-fullscreen */
+
+position: absolute;
+width: 16px;
+height: 16px;
+right: 22px;
+bottom: 10px;
+
+background: #EAEAEA;
+border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+/* ico-tv */
+
+position: absolute;
+left: 93.98%;
+right: 4.3%;
+top: 96.25%;
+bottom: 1.25%;
+
+background: #EAEAEA;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 1px;
+
+
+/* path */
+
+position: absolute;
+width: 22px;
+height: 18px;
+right: 55px;
+bottom: 9px;
+
+background: #EAEAEA;
+border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+/* ico-broadcast */
+
+position: absolute;
+width: 11px;
+height: 11px;
+right: 66px;
+bottom: 9px;
+
+background: #C4C4C4;
+
+
+/* ico-theater */
+
+position: absolute;
+left: 91.25%;
+right: 7.19%;
+top: 96.53%;
+bottom: 1.53%;
+
+background: #EAEAEA;
+border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 20px;
+height: 14px;
+right: 92px;
+bottom: 11px;
+
+background: #EE1A26;
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 16px;
+height: 10px;
+right: 94px;
+bottom: 13px;
+
+background: #EE1A26;
+
+
+/* ico-hd */
+
+position: absolute;
+left: 88.67%;
+right: 9.77%;
+top: 96.39%;
+bottom: 1.39%;
+
+
+
+/* ico-gear */
+
+position: absolute;
+left: 88.67%;
+right: 10.19%;
+top: 96.39%;
+bottom: 1.39%;
+
+background: #EAEAEA;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 1px;
+
+
+/* path */
+
+position: absolute;
+width: 15.4px;
+height: 16px;
+right: 129.99px;
+bottom: 10px;
+
+background: #EAEAEA;
+border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+/* path */
+
+position: absolute;
+width: 4px;
+height: 4px;
+right: 135.69px;
+bottom: 16px;
+
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+
+/* background */
+
+position: absolute;
+width: 13px;
+height: 9px;
+right: 125px;
+bottom: 17px;
+
+background: #EE1A26;
+border-radius: 1px;
+
+
+/* HD */
+
+position: absolute;
+width: 9px;
+height: 5px;
+right: 127px;
+bottom: 19px;
+
+background: #F1F2F1;
+box-shadow: 0px 1px 0px #560A0F;
+
+
+/* ico-titles */
+
+position: absolute;
+left: 85.7%;
+right: 12.89%;
+top: 96.53%;
+bottom: 1.53%;
+
+background: #EAEAEA;
+border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+/* path */
+
+position: absolute;
+width: 18px;
+height: 14px;
+right: 165px;
+bottom: 11px;
+
+background: #EAEAEA;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 2px;
+
+
+/* path */
+
+position: absolute;
+width: 5px;
+height: 6px;
+right: 168px;
+bottom: 15px;
+
+background: #000000;
+
+
+/* path */
+
+position: absolute;
+width: 5px;
+height: 6px;
+right: 175px;
+bottom: 15px;
+
+background: #000000;
+
+
+/* time */
+
+position: absolute;
+width: 71px;
+height: 17px;
+left: 135px;
+bottom: 9px;
+
+font-family: 'Helvetica';
+font-size: 13px;
+line-height: 19px;
+display: flex;
+align-items: center;
+letter-spacing: 0.01em;
+
+color: #EAEAEA;
+
+border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+/* ico-sound */
+
+position: absolute;
+left: 7.97%;
+right: 91%;
+top: 96.39%;
+bottom: 1.39%;
+
+background: #EAEAEA;
+border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+/* path */
+
+position: absolute;
+width: 3px;
+height: 8px;
+left: 113px;
+bottom: 14px;
+
+background: #EAEAEA;
+border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+/* path */
+
+position: absolute;
+width: 9px;
+height: 16px;
+left: 102px;
+bottom: 10px;
+
+background: #EAEAEA;
+border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+/* ico-next */
+
+position: absolute;
+left: 5.47%;
+right: 93.59%;
+top: 96.67%;
+bottom: 1.67%;
+
+background: #EAEAEA;
+border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+/* path */
+
+position: absolute;
+width: 2px;
+height: 12px;
+left: 80px;
+bottom: 12px;
+
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+
+/* path */
+
+position: absolute;
+width: 8px;
+height: 12px;
+left: 70px;
+bottom: 12px;
+
+background: #EAEAEA;
+border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+/* ico-play */
+
+position: absolute;
+width: 13px;
+height: 16px;
+left: 29px;
+bottom: 10px;
+
+background: #EAEAEA;
+border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+/* timeline */
+
+position: absolute;
+left: 0.94%;
+right: 0.94%;
+top: 94.58%;
+bottom: 5%;
+
+
+
+/* full */
+
+position: absolute;
+height: 3px;
+left: 12px;
+right: 12px;
+bottom: 36px;
+
+background: rgba(234, 234, 234, 0.2);
+
+
+/* loaded */
+
+position: absolute;
+height: 3px;
+left: 0.94%;
+right: 50%;
+bottom: 36px;
+
+background: rgba(234, 234, 234, 0.5);
+
+
+/* played */
+
+position: absolute;
+height: 3px;
+left: 0.94%;
+right: 66.25%;
+bottom: 36px;
+
+background: #FC0D1C;
+
+
+/* play button */
+
+position: absolute;
+left: 47.34%;
+right: 47.34%;
+top: 46.67%;
+bottom: 46.67%;
+
+
+
+/* path */
+
+position: absolute;
+width: 68px;
+height: 48px;
+left: calc(50% - 68px/2);
+top: calc(50% - 48px/2);
+
+background: rgba(0, 0, 0, 0.25);
+
+
+/* path */
+
+position: absolute;
+width: 18.37px;
+height: 19.18px;
+left: calc(50% - 18.37px/2 + 2.17px);
+top: calc(50% - 19.18px/2 - 0.74px);
+
+background: #EAEAEA;
+
+
+/* Made at Theorem with love */
+
+position: absolute;
+height: 27px;
+left: 16px;
+right: 52px;
+top: 14px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* ico-info */
+
+position: absolute;
+width: 20px;
+height: 20px;
+right: 16px;
+top: 14px;
+
+background: #EAEAEA;
+border: 1px solid rgba(0, 0, 0, 0.1);
