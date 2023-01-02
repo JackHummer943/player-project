@@ -38,16 +38,17 @@
 // }
 
 
-// перепишите с использованием функции-стрелки
-// заменить код Function Expression стрелочной функцией
-function ask(question, yes, no) {
-  if (confirm(question)) yes()
-  else no();
-} 
-
-ask(
-() => alert("Вы согласились."),
-() => alert("Вы отменили выполнение.")
-);
-
+let age = prompt("Сколько Вам лет?", 18);
+// в зависимости от условия объявляем функицю
+if (age < 18) {
+  function welcome() {
+    alert("Привет!");
+  }
+} else {
+  function welcome() {
+    alert("Здавствуйте!");
+  }
+  }
+  welcome();
+}
 </script>
