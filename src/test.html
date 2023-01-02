@@ -38,11 +38,21 @@
 // }
 
 
-let age = prompt ("Сколько Вам лет?", 18);
+let age = 16; // возьмем для примера 16
 
-let welocome = (age < 18) ?
-  function() { alert("Привет!");
-} : 
-  function() { alert("Здравствуйте!");};
-  welcome(); // теперь все в порядке
+if (age < 18) {
+  welcome();           // \ (выполнится)
+  function welcome() { // |
+    alert("Привет!");  // | 
+  }                    // | Function Declaration доступно
+                       // |
+   welcome();          // | (выполнится)
+} else {
+  function welcome() {
+    alert("Здавствуйте!");
+  }
+}
+// здесь фигурная скобка закрывается,
+// поэтому Function Declaration, созданные внутри блока кода выше -- недоступны отсюда.
+welcome(); // Ошибка: welcome is not defined
 </script>
