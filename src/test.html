@@ -38,21 +38,9 @@
 // }
 
 
-let age = 16; // возьмем для примера 16
-
-if (age < 18) {
-  welcome();           // \ (выполнится)
-  function welcome() { // |
-    alert("Привет!");  // | 
-  }                    // | Function Declaration доступно
-                       // |
-   welcome();          // | (выполнится)
-} else {
-  function welcome() {
-    alert("Здавствуйте!");
-  }
+function showMessage(from, text) { // парамтеры from и text
+  alert(from + ': ' + text);
 }
-// здесь фигурная скобка закрывается,
-// поэтому Function Declaration, созданные внутри блока кода выше -- недоступны отсюда.
-welcome(); // Ошибка: welcome is not defined
+showMessage('Катя','Привет!'); // Катя: Привет! (*)
+showMessage('Катя', "Как дела?"); // Катя: Как дела? (**)
 </script>
