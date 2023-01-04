@@ -38,12 +38,8 @@
 // }
 
 
-function showMessage(from, text) {
-  from = '*' + from + '*'; // немного улучшим alert
-  alert( from + ': ' + text);
+function showMessage(from, text = "текст не добавлен") {
+  alert( from + ": " + text);
 }
-let from = "Аня";
-showMessage(from, "Привет"); // *Аня*: Привет
-// значение "from" осталось прежним, функция изменила значение локальной переменной 
-alert( from); // Аня
+showMessage("Аня"); // Аня: текст не добавлен
 </script>
