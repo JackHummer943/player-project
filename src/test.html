@@ -38,9 +38,12 @@
 // }
 
 
-function showMessage(from, text) { // парамтеры from и text
-  alert(from + ': ' + text);
+function showMessage(from, text) {
+  from = '*' + from + '*'; // немного улучшим alert
+  alert( from + ': ' + text);
 }
-showMessage('Катя','Привет!'); // Катя: Привет! (*)
-showMessage('Катя', "Как дела?"); // Катя: Как дела? (**)
+let from = "Аня";
+showMessage(from, "Привет"); // *Аня*: Привет
+// значение "from" осталось прежним, функция изменила значение локальной переменной 
+alert( from); // Аня
 </script>
