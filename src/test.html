@@ -38,8 +38,8 @@
 // }
 
 
-function showMessage(from, text = "текст не добавлен") {
-  alert( from + ": " + text);
+function showMessage(from, text = anotherFunction()) {
+  // anotherFunction() выполнится только если не передан text
+  // результатом будет значение text
 }
-showMessage("Аня"); // Аня: текст не добавлен
 </script>
