@@ -38,10 +38,18 @@
 // }
 
 
-function sum(a, b) {
-  return a + b;
+function checkAge(age) {
+  if (age > 18) {
+    return true;
+  } else {
+    return confirm('Имеется ли у вас разрешение?');
+  }
 }
+let age = prompt('Сколько вам лет?', 18);
 
-let result = sum(1, 2);
-  alert( result ); // 3
+if ( checkAge(age)) {
+  alert('Доступ получен');
+} else {
+  alert('Доступ закрыт');
+}
 </script>
