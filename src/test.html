@@ -38,11 +38,10 @@
 // }
 
 
-function showCount(count) {
-  // если count равен undefined или null, показат "неизвестно"
-  alert(count ?? "неизвестно");
+function sum(a, b) {
+  return a + b;
 }
-showCount(0);
-showCount(null); // неизвестно
-showCount(); // неизвестно
+
+let result = sum(1, 2);
+  alert( result ); // 3
 </script>
