@@ -38,18 +38,11 @@
 // }
 
 
-function checkAge(age) {
-  if (age > 18) {
-    return true;
-  } else {
-    return confirm('Имеется ли у вас разрешение?');
+function showMovie(age) {
+  if (! checkAge(age)) {
+    return;
   }
-}
-let age = prompt('Сколько вам лет?', 18);
-
-if ( checkAge(age)) {
-  alert('Доступ получен');
-} else {
-  alert('Доступ закрыт');
+  alert("Вам показывается кино"); // (*)
+ // ...
 }
 </script>
