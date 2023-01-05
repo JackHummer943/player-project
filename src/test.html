@@ -39,11 +39,8 @@
 
 
 function showMessage(text) {
-  // ...
-  if (text === undefined) { // если параметр отсутствует, 
-    text = 'пустое сообщение';
-  }
-  alert(text);
+  // если значение text ложно или равняется undefined, тогда 
+  //присвоить text значение 'пустое сообщение'
+ text = text || 'пустое сообщение';
 }
-showMessage();
 </script>
