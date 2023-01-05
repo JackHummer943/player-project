@@ -38,10 +38,12 @@
 // }
 
 
-function showMessage(from, text) {
-  if (text === undefined) {
-    text = 'текст не добавлен';
+function showMessage(text) {
+  // ...
+  if (text === undefined) { // если параметр отсутствует, 
+    text = 'пустое сообщение';
   }
-  alert( from + ": " + text);
+  alert(text);
 }
+showMessage();
 </script>
