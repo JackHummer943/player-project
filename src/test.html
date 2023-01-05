@@ -38,9 +38,11 @@
 // }
 
 
-function showMessage(text) {
-  // если значение text ложно или равняется undefined, тогда 
-  //присвоить text значение 'пустое сообщение'
- text = text || 'пустое сообщение';
+function showCount(count) {
+  // если count равен undefined или null, показат "неизвестно"
+  alert(count ?? "неизвестно");
 }
+showCount(0);
+showCount(null); // неизвестно
+showCount(); // неизвестно
 </script>
