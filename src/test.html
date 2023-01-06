@@ -38,17 +38,12 @@
 // }
 
 
-function showPrimes(n) {
- for (let i = 2; i < n; i++) {
-  if (!isPrime(i)) continue;
-alert(i);
-    }
+function checkAge(age) {
+  if (age > 18) {
+    return true;
+  } else {
+    //...
+    return confirm('Разрешение?');
   }
-
-function isPrime(n) {
-  for (let i = 2; i < n; i++) {
-    if ( n % i == 0) return false;
-  }
-  return true;
 }
 </script>
