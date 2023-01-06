@@ -39,13 +39,20 @@
 
 
 function example() {
-  switch(x) {
-    case 'value1': // if (x === 'value1')
-    ...[break]
-    case 'value2': // if (x === 'value2')
-    ...[break]
+  let a = 2 + 2;
+
+  switch (a) {
+    case 3: 
+    alert('Мало');
+    break;
+    case 4:
+    alert('Точно!');
+    break;
+    case 5:
+    alert('Больше чем нужно');
+    break;
     default:
-      ...[break]
+    alert("Нет таких значений");
   }
 }
 </script>
