@@ -39,11 +39,6 @@
 
 
 function checkAge(age) {
-  console.log(age);
-  if (age > 18) {
-    return true;
-  }
-  //...
-  return confirm('Есть разрешение?')
+  return (age < 18) ||  confirm('Разрешение?');
 }
 </script>
