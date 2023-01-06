@@ -39,16 +39,19 @@
 
 
 function example() {
-  let a = 2 + 2;
-  switch (a) {
-    case 3: 
-    alert('Не достаточно');
-    case 4:
-    alert('в точку!');
-    case 5:
-    alert('Больше чем нужно');
+let a = 3;
+switch (a) {
+  case 4:
+    alert('Правильно!');
+    break;
+    case 3: // (*) группируем оба case
+    case 5: 
+    alert('Неправильно!');
+    alert("Может вам посетить урок математики?");
+    break;
+
     default:
-      alert("Нет такиих значений");
-    }
+    alert('Результат выглядит странно. Честно');
+}
   }
 </script>
