@@ -37,10 +37,10 @@
 //   alert ( pow(x,n) );
 // }
 
-let firstName = null;
-let lastName = null;
-let nickName = "Оригинальный ник";
+let heigth = null;
+let width = null;
+// важно: используем кргуглые скобки
+let area = (heigth ?? 100) * (width ?? 50);
 
-alert(firtsName ?? lastName ?? nickName ?? "Аноним"); // Оригинальный ник
-
+alert(area); // 5000
 </script>
