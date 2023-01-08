@@ -37,10 +37,9 @@
 //   alert ( pow(x,n) );
 // }
 
-let heigth = null;
-let width = null;
-// важно: используем кргуглые скобки
-let area = (heigth ?? 100) * (width ?? 50);
+let userName = prompt("Введите имя", "Алиса");
+let isTeaWanted = confirm("Вы хотите чаю?");
 
-alert(area); // 5000
+alert("Посетитель: " + userName ); // Алиса
+alert("Чай: " + isTeaWanted); // true
 </script>
