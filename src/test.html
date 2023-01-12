@@ -38,15 +38,9 @@
 // }
 
 
-// объявляем переменную num 
-let num;
 
-// выполнить вывод на экран сообщение пользователю ввести число, если ничего не выведено 0
-do {
-num = prompt("введите число больше 100", 0);
-// делай пока num <=100
-} while (num <= 100 && num)
-// необходимо добавить вторую проверку && num
-// проверка num <= 100 && num при вводе null даст true
-
+alert(true || true); // true
+alert(false || true); // true
+alert(true || false); // true
+alert( false || false); // false
 </script>
