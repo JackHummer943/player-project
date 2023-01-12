@@ -39,10 +39,10 @@
 
 
 
-let hour = 12;
-let isWeekend = true;
+alert( 1 || 0); // 1
+alert(true || 'no matter what'); // true
 
-if (hour < 10 || hour > 18 || isWeekend) {
-  alert('Офис закрыт.'); // это выходной
-}
+alert(null || 1); // 1 (первое истинное значение)
+alert( null || 0 || 1); // 1 (первое истинное значение)
+alert( undefined || null || 0); // 0 (поскольку все ложно, возвращается последнее значение)
 </script>
