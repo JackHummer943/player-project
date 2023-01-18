@@ -37,9 +37,16 @@
 //   alert ( pow(x,n) );
 // }
 
-for (let i = 0; i < 10; i++) {
-  if (cond) {
-    // ... /// <- ещё один уровень вложенности
+function pow(x, n) {
+  if (n < 0) {
+    alert("Отрицательные значения 'n' не поддерживаются");
+  } else {
+    let result = 1;
+
+    for (let i = 0; i < n; i++) {
+      result *= x;
+    }
+    return result;
   }
 }
 </script>
