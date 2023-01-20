@@ -37,11 +37,13 @@
 //   alert ( pow(x,n) );
 // }
 
-let age = prompt('Возраст', 18);
-
-let message = (age < 3) ? 'Здравствуй!' :
-  (age < 18) ? 'Привет!' :
-  (age < 100) ? 'Здравствуйте!':
-  'Какой необычный у вас возраст!';
-  alert(message);
+if (age < 3) {
+  message = 'Здравствуй!';
+} else if (age < 18) {
+  message = 'Привет!';
+} else if (age < 100) {
+  message = 'Здравствуйте!';
+} else {
+  message = 'Какой необычный возраст!';
+}
 </script>
