@@ -71,7 +71,13 @@ it("возводит в степень n", function() {
 
   <script>
     function pow() {
-      return 8; // :) сжульничаем!
+     let result = 1;
+
+     for (let i = 0; i < n; i++) {
+      result *= x;
+     }
+     
+     return result;
     }
   </script>
 
