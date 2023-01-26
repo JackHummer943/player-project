@@ -1,13 +1,17 @@
 describe("pow", function() {
 
- function makeTest(x) {
+describe("возводит x в степень 3", function () {
+  
+function makeTest(x) {
   let expected = x * x * x;
   it(`${x} в степени 3 будет ${expected}`, function() {
-    AuthenticatorAssertionResponse.equal(pow(x, 3), expected);
+   assert.equal(pow(x, 3), expected);
   });
  }
  
- for (let x =1; x <= 5; x++) {
+ for (let x = 1; x <= 5; x++) {
   makeTest(x);
  }
+});
+
 });
