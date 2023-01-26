@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <script>
 "use strict";
 
@@ -37,63 +37,29 @@
 //   alert ( pow(x,n) );
 // }
 
-describe("pow", function() {
+let user = new Object();
+user = {
+  name: "John",
+  age: 30
+};
 
-it("возводит в степень n", function() {
-  assert.equal(pow(2, 3), 8);
-});
+alert( user,name );
+alert( user.age);
 
-});
+user.isAdmin = true;
+delete user.age;
 
-</script> -->
+user = {
+  name: "John",
+  age: 30,
+  "likes birds": true,
+};
+const admin = {
+  name: "Smit"
+};
+user.name = "Pete";
+alert(user.name);
+
+</script>
 
 
-<!DOCTYPE html>
-<html>
-<head>
-  <!-- добавим стили mocha для отображения результатов -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
-  <!-- добавляем сам фреймворк mocha -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
-  <script>
-    // включаем режим тестирования в стиле BDD
-    mocha.setup('bdd');
-  </script>
-  <!-- добавим chai -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
-  <script>
-    // chai предоставляет большое количество функций. Объявим assert глобально
-    let assert = chai.assert;
-  </script>
-</head>
-
-<body>
-
-  <script>
-    function pow(x, n) {
-      if (n < 0) return NaN;
-      if (Math.round(n) != n) return NaN;
-
-      let result = 1;
-
-      for (let i = 0; i < n; i++) {
-        result *= x;
-      }
-
-      return result;
-    }
-  </script>
-
-  <!-- скрипт со спецификацией (describe, it...) -->
-  <script src="test.js"></script>
-
-  <!-- элемент с id="mocha" будет содержать результаты тестов -->
-  <div id="mocha"></div>
-
-  <!-- запускаем тесты! -->
-  <script>
-    mocha.run();
-  </script>
-</body>
-
-</html>
