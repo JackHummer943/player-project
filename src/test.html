@@ -59,6 +59,14 @@ const admin = {
 };
 user.name = "Pete";
 alert(user.name);
+user["like birds"] = true;
+alert(user["like birds"]);
+
+delete user["like birds"];
+
+let key = "like birds";
+user[key] = true;
+
 
 </script>
 
