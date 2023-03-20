@@ -38,31 +38,23 @@
 // }
 
 
-let calculator = {
-// 1. пишем для трех методов заготовки
-  read() {
-    // для метода считывания переменных x и y
-    // мы задаем метод объекта this 
-    // с переменной x для ввода значения
-    this.x = + prompt('введите первое значение', 0);
-    // с переменной y для ввода значения
-    this.y = + prompt('введите второе значение', 0);
+let ladder = {
+  step: 0,
+  up() {
+    this.step++;
+    return this;
+  },
+  down() {
+    this.step--;
+    return this;
 
   },
-
-  // второй метод для суммы
-  sum() {
-    // верни метод объекта x и метод объекта y
-    return this.x + this.y;
-  },
-  mul() {
-    // верни метод объекта x или метод объекта y
-    return this.x * this.y;
+  showStep: function() { // показывает текущую ступеньку
+    alert( this.step );
+    return this;
   }
-}
-calculator.read();
-alert( calculator.sum());
-alert( calculator.mul());
+};
+ladder.up().up().down().showStep().down().showStep();
 
 
 </script>
