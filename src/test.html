@@ -38,13 +38,23 @@
 // }
 
 
-function SmallUser() {
+function User(name) {
+  this.name = name;
 
-  this.name = "Ken";
-
-  return; // <-- просто вернет this
+  this.sayHi = function() {
+    alert("Меня зовут:" + this.name);
+  };
 }
-alert( new SmallUser().name ); // Ken
+
+let tommy = new User("Tommy");
+
+tommy.sayHi(); // меня зовут: Tommy
+
+// john = {
+//   name: "John",
+//   sayHi: function() { ... }
+// }
+
 
 </script>
 
