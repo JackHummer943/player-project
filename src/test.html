@@ -38,23 +38,14 @@
 // }
 
 
-let ladder = {
-  step: 0,
-  up() {
-    this.step++;
-    return this;
-  },
-  down() {
-    this.step--;
-    return this;
+function BigUser() {
 
-  },
-  showStep: function() { // показывает текущую ступеньку
-    alert( this.step );
-    return this;
-  }
-};
-ladder.up().up().down().showStep().down().showStep();
+  this.name = "Tom";
+
+  return { name: "Kong"}; // <-- возвращает этот объект
+}
+
+alert( new BigUser().name); // Kong, получили этот объект
 
 
 </script>
