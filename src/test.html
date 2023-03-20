@@ -38,15 +38,13 @@
 // }
 
 
-function BigUser() {
+function SmallUser() {
 
-  this.name = "Tom";
+  this.name = "Ken";
 
-  return { name: "Kong"}; // <-- возвращает этот объект
+  return; // <-- просто вернет this
 }
-
-alert( new BigUser().name); // Kong, получили этот объект
-
+alert( new SmallUser().name ); // Ken
 
 </script>
 
