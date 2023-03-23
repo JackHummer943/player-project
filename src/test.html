@@ -64,12 +64,39 @@
 // // прибавляет введенное пользователем значение к текущему значению
 // accumulator.read();
 
+
+
+// Создайте функцию-конструктор Accumulator(startingValue).
+
+// Объект, который она создаёт, должен уметь следующее:
+
+// Хранить «текущее значение» в свойстве value. Начальное значение устанавливается в аргументе конструктора startingValue.
+// Метод read() должен использовать prompt для считывания нового числа и прибавления его к value.
+
+
+// // функция-конструктор Accumulator(startingValue)
+// function Accumulator(startingValue) {
+//   // значение this.value равно начальному значению 
+//   this.value = startingValue;
+// // функция для считывания добавочного значения
+//   this.read = function() {
+//     this.value += prompt('Сколько добавить?',0);
+//   };
+// }
+// // создаем конструктор и начинаем с 1
+// let accumulator = new Accumulator(1);
+// // прибавляет введенное пользователем значение к текущему
+// accumulator.read();
+// // прибавляет введенное пользователем значение к текущему
+// accumulator.read();
 // // выведет сумму этих значений
 // alert(accumulator.value);
 
 
+let user = null;
 
-
+alert( user?.address ); // undefined
+alert( user.address.street); // undefined
 
 
 
