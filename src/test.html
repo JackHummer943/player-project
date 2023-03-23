@@ -93,11 +93,17 @@
 // alert(accumulator.value);
 
 
-let user = null;
+let userAdmin = {
+  admin() {
+    alert("i am admin!");
+  }
+};
 
-alert( user?.address ); // undefined
-alert( user.address.street); // undefined
+let userGuest = {};
 
+userAdmin.admin?.(); // i am admin!
+
+userGuest.admin?.(); // ничего не произойдет (такого метода нет)
 
 
 
