@@ -92,18 +92,17 @@
 // // выведет сумму этих значений
 // alert(accumulator.value);
 
-
-let userAdmin = {
-  admin() {
-    alert("i am admin!");
-  }
+let id = Symbol("id");
+let user = {
+  name: "Вася",
+  age: 30,
+  [id]: 123
 };
 
-let userGuest = {};
+for (let key in user) alert(key); // name, age (свойства с ключом-символом нет среди перечисленных)
 
-userAdmin.admin?.(); // i am admin!
-
-userGuest.admin?.(); // ничего не произойдет (такого метода нет)
+// хотя прямой доступ по символу не работает 
+alert("Напрямую: " + user[id]);
 
 
 
