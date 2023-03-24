@@ -94,15 +94,12 @@
 
 let id = Symbol("id");
 let user = {
-  name: "Вася",
-  age: 30,
   [id]: 123
 };
 
-for (let key in user) alert(key); // name, age (свойства с ключом-символом нет среди перечисленных)
+let clone = Object.assign({}, user);
 
-// хотя прямой доступ по символу не работает 
-alert("Напрямую: " + user[id]);
+alert( clone[id]); // 123
 
 
 
