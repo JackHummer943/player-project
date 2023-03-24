@@ -92,14 +92,13 @@
 // // выведет сумму этих значений
 // alert(accumulator.value);
 
-let id = Symbol("id");
-let user = {
-  [id]: 123
-};
+let globalSymbol = Symbol.for("name");
+let localSymbol = Symbol("name");
 
-let clone = Object.assign({}, user);
+alert( Symbol.keyFor(globalSymbol)); // name, глобальный символ
+alert( Symbol.keyFor(localSymbol)); // undefined для неглобального символа
 
-alert( clone[id]); // 123
+alert( localSymbol.description); // name
 
 
 
