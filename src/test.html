@@ -92,14 +92,19 @@
 // // выведет сумму этих значений
 // alert(accumulator.value);
 
-let globalSymbol = Symbol.for("name");
-let localSymbol = Symbol("name");
+// let globalSymbol = Symbol.for("name");
+// let localSymbol = Symbol("name");
 
-alert( Symbol.keyFor(globalSymbol)); // name, глобальный символ
-alert( Symbol.keyFor(localSymbol)); // undefined для неглобального символа
+// alert( Symbol.keyFor(globalSymbol)); // name, глобальный символ
+// alert( Symbol.keyFor(localSymbol)); // undefined для неглобального символа
 
-alert( localSymbol.description); // name
-alert( localSymbol.description); // name
+// alert( localSymbol.description); // name
+// alert( localSymbol.description); // name
+
+function sayHi() {
+  alert("Прив");
+}
+alert(sayHi); // выведет код функции
 
 
 
