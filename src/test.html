@@ -101,10 +101,20 @@
 // alert( localSymbol.description); // name
 // alert( localSymbol.description); // name
 
-function sayHi() {
-  alert("Прив");
+function ask(question, yes,no){
+  if (confirm(question)) yes()
+  else no();
 }
-alert(sayHi); // выведет код функции
+// 1 функция-колбэк
+function showOk() {
+  alert("Вы согласны.");
+}
+// 2 функция колбэк
+function showCancel() {
+  alert("Вы отменили выполнение.");
+}
+
+ask("Вы согласны?", showOk, showCancel);
 
 
 
