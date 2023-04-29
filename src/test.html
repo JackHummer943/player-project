@@ -104,9 +104,15 @@
 // отсортировать массив оставить только четные числа
 
 
-let guestList = "Guests:\n * John\n * Pete\n * Mary";
+let str = "Объект Ab-Ab посмотрел на объект c";
+let target = "Ab";
 
-alert(guestList); // список гостейб состоящий из нескольких строк
+let pos = -1;
+while ((pos = str.indexOf(target, pos + 1)) != -1) {
+  alert(pos);
+}
+
+
 
 
 
