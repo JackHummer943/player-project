@@ -103,14 +103,14 @@
 
 // отсортировать массив оставить только четные числа
 
+let fruits = ["Apple", "Paer"];
 
-let str = "Объект Ab-Ab посмотрел на объект c";
-let target = "Ab";
+fruits.push("Orange", "Pear");
+fruits.unshift("Pineapple");
 
-let pos = -1;
-while ((pos = str.indexOf(target, pos + 1)) != -1) {
-  alert(pos);
-}
+// ["Pineapple", "Lemon", "Apple", "Pear"]
+alert(fruits);
+
 
 
 
