@@ -19,7 +19,7 @@ function BlockForm({title, age, imageUrl, param, type}) {
     alt="Project"
   />
   <h4 className="block-form__title">{title}</h4>
-  <div className="block-form__selector">
+  {/* <div className="block-form__selector">
     <ul>
       {type.map((typeId) =>(
         <li 
@@ -31,7 +31,7 @@ function BlockForm({title, age, imageUrl, param, type}) {
       ))}
     </ul>
     <ul>
-    {/* {
+    {
       param.map((param, i) => (
         <li
         key = {param}
@@ -40,10 +40,10 @@ function BlockForm({title, age, imageUrl, param, type}) {
         className={activeParam === i ? 'active' : i}
         > 
         {typeNames}</li>
-        ))} */}
+        ))}
     </ul>
-  </div>
-  <div className="block-form__bottom">
+  </div> */}
+  {/* <div className="block-form__bottom">
     <div className="block-form__price">от {age}</div>
     <button onClick={onClickAddButton} className="button button--outline button--add">
       <svg
@@ -59,15 +59,11 @@ function BlockForm({title, age, imageUrl, param, type}) {
         />
       </svg>
       <span>Добавить</span>
-      <i>{/* Здесь возможно будет место в очереди
-       на просмотр, учитывается количество 
-       проектов которые уже добавлены и при новом
-        добавлении проекта, проект встает 
-        в очередь*/}
+      <i>
         {FormCount}
         </i>
     </button>
-  </div>
+  </div> */}
   </div> 
   );
 }
