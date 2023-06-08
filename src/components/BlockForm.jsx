@@ -19,6 +19,8 @@ function BlockForm({title, age, imageUrl, param, type}) {
     alt="Project"
   />
   <h4 className="block-form__title">{title}</h4>
+
+ <img ></img>
   {/* <div className="block-form__selector">
     <ul>
       {type.map((typeId) =>(
