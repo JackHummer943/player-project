@@ -13,10 +13,20 @@ import BlockForm from '../components/BlockForm';
 const Home = () => {
   return (<div className="container">
 <div className="content__top">
+<div class="categories">
+              <ul>
+                <li className="active">Все</li>
+                <li>Мультипликация</li>
+                <li>Фильмы</li>
+                <li>Сериалы</li>
+                <li>Клипы</li>
+                <li>Шортс</li>
+              </ul>
+            </div>
 {/* <Categories/> */}
 <Sort/>
 </div>
-<h2 className="content__title">Все</h2>
+{/* <h2 className="content__title">Все</h2> */}
 <div className="content__items">
 {project.map((obj) => ( 
 <BlockForm 
