@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <script>
-"use strict";
+// "use strict";
 
 // есть массив объектов user, у каждого из объект есть name surname id
 // написать код, который создаст ещё один массив объектов с параметрами id и fullName,
-// fullName = состоит из name и surname.
+// fullName = состоит из name и surname
 
-// написать код который преобразует все в массв имен
-let fedor = {name: "Федор", surname: "Прохоров", id: 1};
-let anton = {name: "Антон", surname: "Иванов", id: 2};
-let mary = {name: "Мария", surname: "Петрова", id: 3};
-
-let users = [fedor, anton, mary];
-
-let usersMapped = users.map(user => ({
-  fullName: `${user.name} ${user.surname}`,
-  id: user.id
-}));
+// использование сложения и вычитания
 
 
-alert(names); // Федор Антон Мария
+// создаем функцию swampWithTemp в которую передаем две переменные
+function swapWithTemp(numberFirst, numberSecound) {
+  console.log(numberFirst, numberSecound);
+  
+  // присваиваем первой переменной (x) значение суммы переменных x и y
+  // должно получиться x + y
+  numberFirst = numberFirst + numberSecound;
 
+  // присваиваем второй переменной (y) значение разности переменных x и y
+  // должно получиться x + y - y
+  numberSecound = numberFirst - numberSecound;
 
+  // присваиваем переменной x значение: 
+  //x = x + y - x - y + y , т.е. x = y
+  numberFirst = numberFirst - numberSecound;
+  
+  // y , x
+  console.log(numberFirst, numberSecound);
+}
+
+swapWithTemp(1,2)
 
 
 
