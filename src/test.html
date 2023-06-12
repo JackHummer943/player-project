@@ -10,23 +10,11 @@
 
 
 // создаем функцию swampWithTemp в которую передаем две переменные
-function swapWithTemp(numberFirst, numberSecound) {
+function swapWithPlusMinus(numberFirst, numberSecound) {
   console.log(numberFirst, numberSecound);
   
-  // присваиваем первой переменной (x) значение суммы переменных x и y
-  // должно получиться x + y
-  numberFirst = numberFirst + numberSecound;
-
-  // присваиваем второй переменной (y) значение разности переменных x и y
-  // должно получиться x + y - y
-  numberSecound = numberFirst - numberSecound;
-
-  // присваиваем переменной x значение: 
-  //x = x + y - x - y + y , т.е. x = y
-  numberFirst = numberFirst - numberSecound;
+  numberSecound = numberFirst(numberFirst=numberSecound)-numberSecound;
   
-  // y , x
-  console.log(numberFirst, numberSecound);
 }
 
 swapWithTemp(1,2)
