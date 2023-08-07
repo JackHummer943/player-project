@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <script>
 // "use strict";
 
@@ -10,14 +11,74 @@
 
 
 // создаем функцию swampWithTemp в которую передаем две переменные
-function swapWithPlusMinus(numberFirst, numberSecound) {
-  console.log(numberFirst, numberSecound);
-  
-  numberSecound = numberFirst(numberFirst=numberSecound)-numberSecound;
-  
-}
+// function swapWithPlusMinus(numberFirst, numberSecound) {
+//   console.log(numberFirst, numberSecound);
+//  //  y = x + y - y , т.е. y = x
+//   numberSecound = numberFirst + (numberFirst=numberSecound)-numberSecound;
+//   console.log(numberFirst, numberSecound);
+// }
 
-swapWithTemp(1,2)
+// swapWithPlusMinus(1,2)
+
+
+// let a = [10,5,6,7,2,9,34,1287,0];
+// console.log(a);
+function bubbleSort(arr) {
+    for(let j = arr.length - 1; j > 0; j--) { 
+        for(let i = 0; i < j; i++) {
+        if (arr[i] > arr[i + 1]) {
+            let temp = arr[i];
+            arr[i] = arr[i + 1];
+            arr[i + 1] = temp;
+      }
+    }
+  }
+}
+bubbleSort(a);
+
+function bubbleSort(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for(let j = 0; j < arr.length - 1; j++) {
+      if(arr[j] > arr[j + 1]) {
+        const tmp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = tmp;
+      }
+    }
+  }
+  console.log(arr);
+}
+const a = [10,5,6,7,2,9,34,1287,0];
+bubbleSort(a);
+
+
+// либо:
+/* let a = [10,5,6,7,2,9,34,1287,0];
+function bubbleSort(arr) {
+  // от 0 до длины входящего массива
+  for (let i = 0; i < arr.length; i++) {
+    for(let j = 0; j < arr.length - 1; j++) {
+      // если текущий элемент больше следующего, меняем их местами
+      if(arr[j] > arr[j + 1]) {
+        // 
+        let tmp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = tmp;
+      }
+    }
+  }
+  // посмотрим за всеми циклами
+  console.log(arr);
+}
+bubbleSort(a);
+*/
+
+
+
+        
+
+
+
 
 
 
