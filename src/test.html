@@ -54,6 +54,8 @@ bubbleSort(a);
 
 // либо:
 /* let a = [10,5,6,7,2,9,34,1287,0];
+
+
 function bubbleSort(arr) {
   // от 0 до длины входящего массива
   for (let i = 0; i < arr.length; i++) {
@@ -64,6 +66,8 @@ function bubbleSort(arr) {
         let tmp = arr[j];
         arr[j] = arr[j + 1];
         arr[j + 1] = tmp;
+
+      
       }
     }
   }
@@ -73,6 +77,34 @@ function bubbleSort(arr) {
 bubbleSort(a);
 */
 
+
+/* let a = [10,5,6,7,2,9,34,1287,0]
+for(let i=0; i<a.length; i++){
+    for(let j=0; j<a.length - 1; j++) {
+    if(a[j] > a[j + 1]) {
+        let tmp = a[j];
+        a[j] = a[j + 1];
+        a[j + 1] = tmp;
+        }
+    }
+    console.log(a);
+}
+*/
+
+
+/* то же самое */
+/*let m = [10,5,6,7,2,9,34,1287,0];
+for (let x = 0; x < m.length; x++) {
+    for(let n = 0; n < m.length - 1; n++){
+        if(m[n] > m[n + 1]){
+            let tmp = m[n];
+            m[n] = m[n + 1];
+            m[n + 1] = tmp;
+        }
+    }
+    console.log(m);
+} 
+*/
 
 
         
